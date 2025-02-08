@@ -1,8 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import { removeTodo } from "../features/todolist/todoSlice";
+import { useEffect } from "react";
 
 function TodoList() {
-  const todos = useSelector((state) => state.todos);
+  let todos = useSelector((state) => state.todos);
+
+  useEffect(() => {
+    localStorage.setItem("tasklist", JSON.stringify(todos));
+  }, [todos]);
+
   const dispatch = useDispatch();
   return (
     <>

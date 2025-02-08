@@ -3,7 +3,9 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  todos: [{ id: 1, task: "Go to the Gym!" }],
+  todos: JSON.parse(localStorage.getItem("tasklist")) ?? [
+    { id: 1, task: "Go to the Gym!" },
+  ],
 };
 
 export const todoSlice = createSlice({
