@@ -29,6 +29,7 @@ function TodoForm() {
       />
       <button
         onClick={handleSubmit}
+        disabled={inputVal === "" ? true : false}
         className="border transition-colors duration-600 bg-green-600 hover:bg-green-700 border-green-600 px-4 py-1.5 sm:px-4 font-bold sm:text-lg text-lg rounded"
       >
         Add Task
