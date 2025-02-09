@@ -11,6 +11,10 @@ function App() {
       <div className="flex justify-center gap-12 items-center flex-col">
         <TodoForm />
         <TodoList />
+        <footer className="fixed bottom-0 py-5">
+          Made with <span className="text-green-600">&hearts;</span> by{" "}
+          <b className="font-bold">Farhan</b>
+        </footer>
       </div>
     </div>
   );
