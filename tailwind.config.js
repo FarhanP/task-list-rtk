@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontSmoothing: ["antialiased"],
+      safelist: ["font-bold"], // Prevent PurgeCSS from removing it
     },
   },
   plugins: [],
