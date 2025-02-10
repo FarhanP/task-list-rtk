@@ -12,7 +12,7 @@ function App() {
         <TodoForm />
         <TodoList />
       </div>
-      <footer className="py-5 absolute left-0 right-0 bottom-0 z-50 text-center">
+      <footer className="py-5 absolute left-0 right-0 bottom-3 z-50 text-center">
         Made with <span className="text-green-600">&hearts;</span> by{" "}
         <b className="font-bold">Farhan</b>
       </footer>
